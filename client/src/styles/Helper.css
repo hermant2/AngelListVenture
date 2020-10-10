@@ -1,0 +1,12 @@
+.centerAlignment {
+  align-self: center;
+  position: inherit;
+}
+
+.spacingTop {
+  margin-top: 1em;
+}
+
+.containerSpacing {
+  margin-top: 3em;
+}

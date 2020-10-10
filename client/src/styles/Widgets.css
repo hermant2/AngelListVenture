@@ -1,0 +1,23 @@
+.buttonDefault {
+  border-radius: 51px;
+  color: white;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-width: 0px;
+  background-color: #050D27;
+  font-family: monospace;
+  font-size: 1em;
+}
+
+.inputDefault {
+  width: 8em;
+  font-size: 12px;
+  border-color: #050D27;
+  border-width: 3px;
+  border-style: solid;
+  padding-left: .2em;
+  border-radius: 51px;
+  padding: 10px;
+}

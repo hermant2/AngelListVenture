@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9a1eb60f-be85-4281-9bed-f9a1bb752197" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go Application" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.15.2/libexec" />
+  <component name="ProjectId" id="1ie9Mqt8Q99uQ1Tdi6tWCBihECs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RunManager" selected="Go Test.TestProrateService_CalculateInvestorAllocation in github.com/hermant2/angelventureserver/pkg/usecase">
+    <configuration name="TestProrateService_CalculateInvestorAllocation in github.com/hermant2/angelventureserver/pkg/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="server" />
+      <working_directory value="$PROJECT_DIR$/pkg/usecase" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/hermant2/angelventureserver/pkg/usecase" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestProrateService_CalculateInvestorAllocation\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestProrateService_CalculateInvestorAllocation/ComplexInput1_Results in github.com/hermant2/angelventureserver/pkg/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="server" />
+      <working_directory value="$PROJECT_DIR$/pkg/usecase" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/hermant2/angelventureserver/pkg/usecase" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestProrateService_CalculateInvestorAllocation\E$/^\QComplexInput1_Results\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestProrateService_CalculateInvestorAllocation/ComplexInput2_Results in github.com/hermant2/angelventureserver/pkg/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="server" />
+      <working_directory value="$PROJECT_DIR$/pkg/usecase" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/hermant2/angelventureserver/pkg/usecase" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestProrateService_CalculateInvestorAllocation\E$/^\QComplexInput2_Results\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestProrateService_CalculateInvestorAllocation/SimpleInput1_Results in github.com/hermant2/angelventureserver/pkg/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="server" />
+      <working_directory value="$PROJECT_DIR$/pkg/usecase" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/hermant2/angelventureserver/pkg/usecase" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestProrateService_CalculateInvestorAllocation\E$/^\QSimpleInput1_Results\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestProrateService_CalculateInvestorAllocation/SimpleInput2_Results in github.com/hermant2/angelventureserver/pkg/usecase" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="server" />
+      <working_directory value="$PROJECT_DIR$/pkg/usecase" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/hermant2/angelventureserver/pkg/usecase" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestProrateService_CalculateInvestorAllocation\E$/^\QSimpleInput2_Results\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestProrateService_CalculateInvestorAllocation in github.com/hermant2/angelventureserver/pkg/usecase" />
+        <item itemvalue="Go Test.TestProrateService_CalculateInvestorAllocation/SimpleInput2_Results in github.com/hermant2/angelventureserver/pkg/usecase" />
+        <item itemvalue="Go Test.TestProrateService_CalculateInvestorAllocation/SimpleInput1_Results in github.com/hermant2/angelventureserver/pkg/usecase" />
+        <item itemvalue="Go Test.TestProrateService_CalculateInvestorAllocation/ComplexInput2_Results in github.com/hermant2/angelventureserver/pkg/usecase" />
+        <item itemvalue="Go Test.TestProrateService_CalculateInvestorAllocation/ComplexInput1_Results in github.com/hermant2/angelventureserver/pkg/usecase" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1878" height="73" key="GridCell.Tab.0.bottom" timestamp="1602348290883">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="73" key="GridCell.Tab.0.bottom/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602348290883" />
+    <state width="1878" height="73" key="GridCell.Tab.0.center" timestamp="1602348290882">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="73" key="GridCell.Tab.0.center/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602348290882" />
+    <state width="1878" height="73" key="GridCell.Tab.0.left" timestamp="1602348290882">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="73" key="GridCell.Tab.0.left/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602348290882" />
+    <state width="1878" height="73" key="GridCell.Tab.0.right" timestamp="1602348290883">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="73" key="GridCell.Tab.0.right/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602348290883" />
+    <state x="203" y="-926" key="SettingsEditor" timestamp="1602257368045">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="203" y="-926" key="SettingsEditor/-266.-1057.1920.1057/0.23.1440.811@-266.-1057.1920.1057" timestamp="1602257368045" />
+    <state x="359" y="-822" width="670" height="676" key="search.everywhere.popup" timestamp="1602348303999">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="359" y="-822" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602348303999" />
+    <state x="359" y="-840" width="670" height="625" key="search.everywhere.popup/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602330350065" />
+  </component>
+</project>

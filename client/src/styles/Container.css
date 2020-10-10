@@ -1,0 +1,15 @@
+.centeredContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+}
+
+.inputContainer {
+  position: relative;
+  margin-top: 1.5em;
+  display: flex;
+  flex-flow: row wrap;
+  grid-column-gap: 1em;
+  align-items: center;
+}
