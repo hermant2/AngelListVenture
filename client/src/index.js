@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import './styles/Helper.css'
 import Header from './components/Header'
-import ProrationContainer from './components/ProrationContainer'
+import ProrationContainerView from './components/proration_container/ProrationContainerView'
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <ProrationContainer />
+    <ProrationContainerView />
   </React.StrictMode>,
   document.getElementById('root')
 );

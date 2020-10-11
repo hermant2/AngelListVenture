@@ -14,13 +14,11 @@ func Router() *chi.Mux {
 	router := chi.NewRouter()
 
 	cors := cors.Handler(cors.Options{
-		AllowedOrigins: []string{"*"}, // Use this to allow specific origin hosts
+		AllowedOrigins:   []string{"http://localhost:3000"},
 		AllowedMethods:   []string{"POST"},
 		AllowedHeaders:   []string{"Content-Type"},
 		AllowCredentials: false,
-		MaxAge:           300, // Maximum value not ignored by any of major browsers
-	})
-
+		MaxAge:           300})
 	router.Use(middleware.Logger,
 		cors,
 		middleware.Recoverer,
