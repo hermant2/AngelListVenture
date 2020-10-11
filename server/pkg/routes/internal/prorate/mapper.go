@@ -8,7 +8,7 @@ func mapProrateInput(request prorateRequest) usecase.ProrateInput {
 	input := usecase.ProrateInput{TotalAllocation: request.AllocationAmount}
 	for _, investorRequest := range request.InvestorAmounts {
 		investorInput := usecase.InvestorInput{
-			UUID:            investorRequest.UUID,
+			UUID:            investorRequest.ID,
 			Name:            investorRequest.Name,
 			RequestedAmount: investorRequest.RequestedAmount,
 			AverageAmount:   investorRequest.AverageAmount}
@@ -22,7 +22,7 @@ func mapProrateResponseWrapper(investorOutputs []*usecase.InvestorOutput) prorat
 	response := prorateResponse{}
 	for _, output := range investorOutputs {
 		allocationResponse := investorAllocationResponse{
-			UUID:             output.UUID,
+			ID:               output.UUID,
 			Name:             output.Name,
 			AllocationAmount: output.AppliedAllocation.Round(5)}
 		response.InvestorAllocations = append(response.InvestorAllocations, allocationResponse)

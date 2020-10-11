@@ -2,6 +2,7 @@ package usecase
 
 import (
 	"github.com/hermant2/angelventureserver/pkg/apperror"
+	"github.com/hermant2/angelventureserver/pkg/applogger"
 	"github.com/shopspring/decimal"
 )
 
@@ -38,8 +39,10 @@ func (prorateCalculationModel prorateCalculation) doInvestorsReceiveRequestedAmo
 
 func (input ProrateInput) generateProrateCalculationModel() (*prorateCalculation, error) {
 	if input.TotalAllocation.LessThanOrEqual(decimal.Zero) {
+		applogger.Instance().InfoWithParams("invalid prorate input", map[string]interface{}{"prorate": input})
 		return nil, apperror.Unprocessable(apperror.InputZero)
 	} else if len(input.Investors) <= 0 {
+		applogger.Instance().Info("no investor inputs")
 		return nil, apperror.Unprocessable(apperror.NoInvestors)
 	}
 	totalRequestedAmount := decimal.Zero
@@ -48,6 +51,7 @@ func (input ProrateInput) generateProrateCalculationModel() (*prorateCalculation
 
 	for _, investorInput := range input.Investors {
 		if err := investorInput.validate(); err != nil {
+			applogger.Instance().InfoWithParams("invalid investor input", map[string]interface{}{"investor": investorInput})
 			return nil, err
 		}
 

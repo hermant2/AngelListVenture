@@ -1,5 +1,6 @@
 import React from 'react'
 import uuid from 'react-uuid'
+import axios from 'axios'
 import InvestorInput from './subcomponents/InvestorInput'
 import '../styles/Widgets.css'
 import '../styles/Container.css'
@@ -25,14 +26,13 @@ class AllocationInput extends React.Component {
   }
 
   prorate() {
-    let results = this.state.investorInputs.map(input => {
-      return {
-        id: input.id,
-        name: input.name,
-        allocation: input.requestedAmount
-      }
-    })
-    this.props.onAllocationResult(results)
+    let request = {
+      allocationAmount: this.state.availableAllocation,
+      investorAmounts: this.state.investorInputs
+    }
+    axios.post("http://localhost:8080/api/v1/prorate", request)
+        .then(response => this.props.onAllocationResult(response))
+        .catch(error => console.error(error))
   }
 
   removeInvestor(id) {
@@ -43,7 +43,11 @@ class AllocationInput extends React.Component {
   handleInvestorChange(index, field, value) {
     let updatedInput = this.state.investorInputs[index]
     updatedInput[field] = value
-    let newInputs = this.state.investorInputs.slice(index, 1, updatedInput)
+    let newInputs = [
+        ...this.state.investorInputs.slice(0, index),
+        updatedInput,
+        ...this.state.investorInputs.slice(index + 1)
+    ]
     this.setState({"investorInputs": newInputs})
   }
 

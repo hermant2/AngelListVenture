@@ -3,6 +3,7 @@ package routes
 import (
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
+	"github.com/go-chi/cors"
 	"github.com/go-chi/render"
 	"github.com/hermant2/angelventureserver/pkg/applogger"
 	"github.com/hermant2/angelventureserver/pkg/routes/internal/prorate"
@@ -11,7 +12,17 @@ import (
 
 func Router() *chi.Mux {
 	router := chi.NewRouter()
+
+	cors := cors.Handler(cors.Options{
+		AllowedOrigins: []string{"*"}, // Use this to allow specific origin hosts
+		AllowedMethods:   []string{"POST"},
+		AllowedHeaders:   []string{"Content-Type"},
+		AllowCredentials: false,
+		MaxAge:           300, // Maximum value not ignored by any of major browsers
+	})
+
 	router.Use(middleware.Logger,
+		cors,
 		middleware.Recoverer,
 		render.SetContentType(render.ContentTypeJSON),
 		middleware.Compress(5, "application/serializer"))

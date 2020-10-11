@@ -2,6 +2,7 @@ package usecase
 
 import (
 	"github.com/hermant2/angelventureserver/pkg/apperror"
+	"github.com/hermant2/angelventureserver/pkg/applogger"
 	"github.com/shopspring/decimal"
 )
 
@@ -45,6 +46,7 @@ func calculateProratedOutputs(calculationModel prorateCalculation) ([]*InvestorO
 	}
 
 	if appliedAllocationTotal.Round(5).GreaterThan(calculationModel.totalAllocation.Round(5)) {
+		applogger.Instance().Info("appliedTotal greater")
 		return nil, apperror.InternalServerError(apperror.General)
 	} else if appliedAllocationTotal.Equal(calculationModel.totalAllocation) {
 		return investorOutputs, nil

@@ -11,18 +11,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e83cf3-9209-495a-bc0d-d8e7d0e521b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/server/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/server/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pkg/routes/internal/prorate/mapper.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/pkg/routes/internal/prorate/mapper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pkg/routes/internal/prorate/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/pkg/routes/internal/prorate/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pkg/routes/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/pkg/routes/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pkg/usecase/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/pkg/usecase/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pkg/usecase/prorate.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/pkg/usecase/prorate.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.15.2/libexec" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1igTPAyhrNmij4QeOySNKFAoZt2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -37,6 +52,12 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -53,11 +74,22 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="494" y="-688" key="#Go_Modules" timestamp="1602328412053">
       <screen x="-266" y="-1057" width="1920" height="1057" />
     </state>
     <state x="494" y="-688" key="#Go_Modules/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602328412053" />
+    <state x="434" y="-803" width="646" height="490" key="find.popup" timestamp="1602371054827">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="434" y="-803" width="646" height="490" key="find.popup/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602371054827" />
+    <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup" timestamp="1602375013687">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602366803550" />
+    <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602375013687" />
+    <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602371059003" />
   </component>
 </project>

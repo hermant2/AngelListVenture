@@ -5,15 +5,15 @@ import (
 )
 
 type prorateRequest struct {
-	AllocationAmount decimal.Decimal   `json:"allocation_amount"`
-	InvestorAmounts  []investorRequest `json:"investor_amounts"`
+	AllocationAmount decimal.Decimal   `json:"allocationAmount"`
+	InvestorAmounts  []investorRequest `json:"investorAmounts"`
 }
 
 type investorRequest struct {
-	UUID            string          `json:"uuid"`
+	ID              string          `json:"id"`
 	Name            string          `json:"name"`
-	RequestedAmount decimal.Decimal `json:"requested_amount"`
-	AverageAmount   decimal.Decimal `json:"average_amount"`
+	RequestedAmount decimal.Decimal `json:"requestedAmount"`
+	AverageAmount   decimal.Decimal `json:"averageAmount"`
 }
 
 type prorateResponseWrapper struct {
@@ -21,11 +21,11 @@ type prorateResponseWrapper struct {
 }
 
 type prorateResponse struct {
-	InvestorAllocations []investorAllocationResponse `json:"investor_allocations"`
+	InvestorAllocations []investorAllocationResponse `json:"investorAllocations"`
 }
 
 type investorAllocationResponse struct {
-	UUID             string          `json:"uuid"`
+	ID               string          `json:"id"`
 	Name             string          `json:"name"`
-	AllocationAmount decimal.Decimal `json:"allocation_amount"`
+	AllocationAmount decimal.Decimal `json:"allocationAmount"`
 }

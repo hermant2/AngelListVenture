@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1eb60f-be85-4281-9bed-f9a1bb752197" name="Default Changelist" comment="" />
+    <list default="true" id="9a1eb60f-be85-4281-9bed-f9a1bb752197" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/AllocationInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/AllocationInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/routes/internal/prorate/mapper.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/routes/internal/prorate/mapper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/routes/internal/prorate/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/routes/internal/prorate/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/routes/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/routes/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/usecase/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/usecase/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/usecase/prorate.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/usecase/prorate.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +49,11 @@
     </option>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.15.2/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1ie9Mqt8Q99uQ1Tdi6tWCBihECs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -105,34 +142,55 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="73" key="GridCell.Tab.0.bottom" timestamp="1602348290883">
-      <screen x="-266" y="-1057" width="1920" height="1057" />
+    <state width="1878" height="2" key="GridCell.Tab.0.bottom" timestamp="1602349672099">
+      <screen x="-266" y="-1057" width="1920" height="977" />
     </state>
     <state width="1878" height="73" key="GridCell.Tab.0.bottom/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602348290883" />
-    <state width="1878" height="73" key="GridCell.Tab.0.center" timestamp="1602348290882">
-      <screen x="-266" y="-1057" width="1920" height="1057" />
+    <state width="1878" height="2" key="GridCell.Tab.0.bottom/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602349672099" />
+    <state width="1878" height="2" key="GridCell.Tab.0.center" timestamp="1602349672098">
+      <screen x="-266" y="-1057" width="1920" height="977" />
     </state>
     <state width="1878" height="73" key="GridCell.Tab.0.center/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602348290882" />
-    <state width="1878" height="73" key="GridCell.Tab.0.left" timestamp="1602348290882">
-      <screen x="-266" y="-1057" width="1920" height="1057" />
+    <state width="1878" height="2" key="GridCell.Tab.0.center/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602349672098" />
+    <state width="1878" height="2" key="GridCell.Tab.0.left" timestamp="1602349672097">
+      <screen x="-266" y="-1057" width="1920" height="977" />
     </state>
     <state width="1878" height="73" key="GridCell.Tab.0.left/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602348290882" />
-    <state width="1878" height="73" key="GridCell.Tab.0.right" timestamp="1602348290883">
-      <screen x="-266" y="-1057" width="1920" height="1057" />
+    <state width="1878" height="2" key="GridCell.Tab.0.left/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602349672097" />
+    <state width="1878" height="2" key="GridCell.Tab.0.right" timestamp="1602349672098">
+      <screen x="-266" y="-1057" width="1920" height="977" />
     </state>
     <state width="1878" height="73" key="GridCell.Tab.0.right/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602348290883" />
+    <state width="1878" height="2" key="GridCell.Tab.0.right/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602349672098" />
     <state x="203" y="-926" key="SettingsEditor" timestamp="1602257368045">
       <screen x="-266" y="-1057" width="1920" height="1057" />
     </state>
     <state x="203" y="-926" key="SettingsEditor/-266.-1057.1920.1057/0.23.1440.811@-266.-1057.1920.1057" timestamp="1602257368045" />
-    <state x="359" y="-822" width="670" height="676" key="search.everywhere.popup" timestamp="1602348303999">
+    <state x="401" y="-814" width="586" height="490" key="find.popup" timestamp="1602371021020">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="401" y="-814" width="586" height="490" key="find.popup/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602371021020" />
+    <state x="359" y="-822" width="670" height="676" key="search.everywhere.popup" timestamp="1602374552789">
       <screen x="-266" y="-1057" width="1920" height="1057" />
     </state>
     <state x="359" y="-822" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602348303999" />
+    <state x="359" y="-822" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602374552789" />
     <state x="359" y="-840" width="670" height="625" key="search.everywhere.popup/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602330350065" />
   </component>
 </project>
