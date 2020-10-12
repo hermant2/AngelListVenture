@@ -1,26 +1,38 @@
-import {calculateInvestmentAllocations} from "../../services/ProrateService";
+import {calculateInvestmentAllocations} from "../../services/prorate-service";
+import {mapErrorResponseMessage} from "../../mappers/error-model-mapper";
 import InvestorInputModel from "../investor_input/InvestorInputModel";
-import AllocationInputModel from "./AllocationInputModel";
 
 class AllocationInputPresenter {
     constructor(view, model, parentPresenter) {
         this.view = view
         this.parentPresenter = parentPresenter
-        this.model = new AllocationInputModel()
+        this.model = model
         this.view.updateState.bind(this, this.model)
     }
 
-    onTotalAllocationChanged(event) {
-        this.model.availableAllocation = event.target.value
+    onTotalAllocationChanged(event, maskedValue, numericValue) {
+        this.model.availableAllocation = numericValue
         this.view.updateState(this.model)
     }
 
     onProrateClicked() {
+        const validationError = this.model.checkValidationError()
+        if (validationError) {
+            this.parentPresenter.presentAllocationResult([])
+            this.view.displayError(validationError)
+            return
+        }
+
         calculateInvestmentAllocations(this.model.generateAPIRequest())
             .then(prorateResponse => {
-                this.parentPresenter.presentAllocationResult(prorateResponse.prorate.investorAllocations)
+                const investorAllocations = prorateResponse?.prorate?.investorAllocations
+                this.parentPresenter.presentAllocationResult(investorAllocations ? investorAllocations : [])
             })
-            .catch(error => console.error(error))
+            .catch(error => {
+                this.parentPresenter.presentAllocationResult([])
+                const errorMessage = mapErrorResponseMessage(error)
+                this.view.displayError(errorMessage)
+            })
     }
 
     onAddInvestorClicked() {
@@ -35,25 +47,25 @@ class AllocationInputPresenter {
     }
 
     presentInvestorNameChange(id, newName) {
-        let index = this.model.investorInputs.findIndex(input => input.id === id)
+        const index = this.model.investorInputs.findIndex(input => input.id === id)
         if (index >= 0) {
             this.model.investorInputs[index].name = newName
             this.view.updateState(this.model)
         }
     }
 
-    presentInvestorRequestedAmountChange(id, newValue) {
-        let index = this.model.investorInputs.findIndex(input => input.id === id)
+    presentInvestorRequestedAmountChange(id, numericValue) {
+        const index = this.model.investorInputs.findIndex(input => input.id === id)
         if (index >= 0) {
-            this.model.investorInputs[index].requestedAmount = newValue
+            this.model.investorInputs[index].requestedAmount = numericValue
             this.view.updateState(this.model)
         }
     }
 
-    presentInvestorAverageAmountChange(id, newValue) {
-        let index = this.model.investorInputs.findIndex(input => input.id === id)
+    presentInvestorAverageAmountChange(id, numericValue) {
+        const index = this.model.investorInputs.findIndex(input => input.id === id)
         if (index >= 0) {
-            this.model.investorInputs[index].averageAmount = newValue
+            this.model.investorInputs[index].averageAmount = numericValue
             this.view.updateState(this.model)
         }
     }

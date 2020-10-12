@@ -8,13 +8,13 @@ import ProrationContainerModel from "./ProrationContainerModel";
 class ProrationContainerView extends React.Component {
     constructor(props) {
         super(props)
-        let model = new ProrationContainerModel()
-        this.state = model
+        const model = new ProrationContainerModel()
+        this.state = {model: model}
         this.presenter = new ProrationContainerPresenter(this, model)
     }
 
     updateState(model) {
-        this.setState(model)
+        this.setState({model: model})
     }
 
     render() {
@@ -30,7 +30,7 @@ class ProrationContainerView extends React.Component {
 
                         <Col sm={6}>
                             <AllocationResultView
-                                model={this.state.allocationResult}
+                                model={this.state.model.allocationResult}
                             />
                         </Col>
                     </Row>

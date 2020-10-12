@@ -2,7 +2,7 @@ import uuid from "react-uuid"
 
 class InvestorInputModel {
     id = uuid()
-    name = null
+    name = ""
     requestedAmount = null
     averageAmount = null
 }

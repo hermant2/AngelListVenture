@@ -2,7 +2,6 @@ class InvestorInputPresenter {
     constructor(view, model, parentPresenter) {
         this.view = view
         this.model = model
-        console.log(parentPresenter)
         this.parentPresenter = parentPresenter
     }
 
@@ -10,12 +9,12 @@ class InvestorInputPresenter {
         this.parentPresenter.presentInvestorNameChange(this.model.id, event.target.value)
     }
 
-    onRequestedAmountChanged(event) {
-        this.parentPresenter.presentInvestorRequestedAmountChange(this.model.id, event.target.value)
+    onRequestedAmountChanged(event, maskedValue, numericValue) {
+        this.parentPresenter.presentInvestorRequestedAmountChange(this.model.id, numericValue)
     }
 
-    onAverageAmountChanged(event) {
-        this.parentPresenter.presentInvestorAverageAmountChange(this.model.id, event.target.value)
+    onAverageAmountChanged(event, maskedValue, numericValue) {
+        this.parentPresenter.presentInvestorAverageAmountChange(this.model.id, numericValue)
     }
 
     onRemoveInvestorClicked() {

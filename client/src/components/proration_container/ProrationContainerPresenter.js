@@ -1,4 +1,4 @@
-import { mapAllocationResult } from "../../mappers/AllocationResultModelMapper";
+import { mapAllocationResult } from "../../mappers/allocation-model-mapper";
 
 class ProrationContainerPresenter {
     constructor(view, model) {

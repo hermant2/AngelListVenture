@@ -1,6 +1,8 @@
 import React from 'react'
+import CurrencyInput from 'react-currency-input'
 import '../../styles/Widgets.css'
 import '../../styles/Container.css'
+import {investorStrings, prorateStrings} from "../../strings/localized-strings";
 import InvestorInputPresenter from "./InvestorInputPresenter";
 
 class InvestorInputView extends React.Component {
@@ -16,32 +18,36 @@ class InvestorInputView extends React.Component {
                     className="inputDefault"
                     type="text"
                     name="name"
-                    placeholder="Investor Name"
+                    placeholder={investorStrings.investorName}
                     value={this.props.model.name}
                     onChange={this.presenter.onNameChange.bind(this.presenter)}
                 />
 
-                <input
+                <CurrencyInput
                     className="inputDefault"
-                    type="number"
-                    name="requestedAmount"
-                    placeholder="Requested Amount"
+                    precision="2"
+                    allowNegative={false}
+                    allowEmpty={true}
+                    prefix={prorateStrings.currencyPrefix}
+                    placeholder={investorStrings.requestedAmount}
                     value={this.props.model.requestedAmount}
-                    onChange={this.presenter.onRequestedAmountChanged.bind(this.presenter)}
+                    onChangeEvent={this.presenter.onRequestedAmountChanged.bind(this.presenter)}
                 />
 
-                <input
+                <CurrencyInput
                     className="inputDefault"
-                    type="number"
-                    name="averageAmount"
-                    placeholder="Average Amount"
+                    precision="2"
+                    allowNegative={false}
+                    allowEmpty={true}
+                    prefix={prorateStrings.currencyPrefix}
+                    placeholder={investorStrings.averageAmount}
                     value={this.props.model.averageAmount}
-                    onChange={this.presenter.onAverageAmountChanged.bind(this.presenter)}
+                    onChangeEvent={this.presenter.onAverageAmountChanged.bind(this.presenter)}
                 />
 
                 <button
                     className="buttonDefault"
-                    onClick={this.presenter.onRemoveInvestorClicked}>Remove
+                    onClick={this.presenter.onRemoveInvestorClicked.bind(this.presenter)}>{investorStrings.remove}
                 </button>
             </div>
         )

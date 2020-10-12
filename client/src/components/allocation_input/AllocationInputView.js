@@ -1,26 +1,32 @@
 import React from 'react'
 import InvestorInputView from '../investor_input/InvestorInputView'
+import CurrencyInput from 'react-currency-input'
 import '../../styles/Widgets.css'
 import '../../styles/Container.css'
 import '../../styles/Header.css'
 import '../../styles/Helper.css'
-import AllocationInputPresenter from "./AllocationInputPresenter";
-import AllocationInputModel from "./AllocationInputModel";
+import AllocationInputPresenter from "./AllocationInputPresenter"
+import AllocationInputModel from "./AllocationInputModel"
+import {prorateStrings} from "../../strings/localized-strings"
 
 class AllocationInputView extends React.Component {
     constructor(props) {
         super(props)
-        let model = new AllocationInputModel()
-        this.state = model
+        const model = new AllocationInputModel()
+        this.state = {model: model}
         this.presenter = new AllocationInputPresenter(this, model, this.props.parentPresenter)
     }
 
     updateState(model) {
-        this.setState(model)
+        this.setState({model: model})
+    }
+
+    displayError(message) {
+        alert(message)
     }
 
     render() {
-        const investorInputs = this.state.investorInputs.map((input, index) => {
+        const investorInputs = this.state.model.investorInputs.map(input => {
             return <InvestorInputView
                 key={input.id}
                 parentPresenter={this.presenter}
@@ -30,22 +36,25 @@ class AllocationInputView extends React.Component {
 
         return (
             <div className="centeredContainer">
-                <h3 className="defaultTitle">Total Available Allocation</h3>
-                <input
+                <h3 className="defaultTitle">{prorateStrings.totalAvailableAllocation}</h3>
+                <CurrencyInput
                     className="inputDefault"
-                    type="number"
-                    name="name"
-                    placeholder="Allocation"
-                    onChange={this.presenter.onTotalAllocationChanged.bind(this.presenter)}
+                    precision="2"
+                    allowNegative={false}
+                    allowEmpty={true}
+                    prefix={prorateStrings.currencyPrefix}
+                    placeholder={prorateStrings.allocation}
+                    value={this.state.model.availableAllocation}
+                    onChangeEvent={this.presenter.onTotalAllocationChanged.bind(this.presenter)}
                 />
                 {investorInputs}
                 <button
                     className="buttonDefault spacingTop"
-                    onClick={this.presenter.onAddInvestorClicked.bind(this.presenter)}>Add Investor
+                    onClick={this.presenter.onAddInvestorClicked.bind(this.presenter)}>{prorateStrings.addInvestor}
                 </button>
                 <button
                     className="buttonDefault spacingTop"
-                    onClick={this.presenter.onProrateClicked.bind(this.presenter)}>Prorate
+                    onClick={this.presenter.onProrateClicked.bind(this.presenter)}>{prorateStrings.prorate}
                 </button>
             </div>
         )
