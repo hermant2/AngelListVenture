@@ -6,8 +6,8 @@ class InvestorResultView extends React.Component {
   render() {
     return (
       <div className="inputContainer">
-        <h4>{this.props.model.name}</h4>
-        <h4>{this.props.model.amount}</h4>
+        <h4 data-testid="name">{this.props.model.name}</h4>
+        <h4 data-testid="amount">{this.props.model.amount}</h4>
       </div>
     )
   }

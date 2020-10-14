@@ -15,15 +15,16 @@ class InvestorInputView extends React.Component {
         return (
             <div className="inputContainer">
                 <input
+                    data-testid="name"
                     className="inputDefault"
                     type="text"
-                    name="name"
                     placeholder={investorStrings.investorName}
                     value={this.props.model.name}
                     onChange={this.presenter.onNameChange.bind(this.presenter)}
                 />
 
                 <CurrencyInput
+                    data-testid="requestedAmount"
                     className="inputDefault"
                     precision="2"
                     allowNegative={false}
@@ -35,6 +36,7 @@ class InvestorInputView extends React.Component {
                 />
 
                 <CurrencyInput
+                    data-testid="averageAmount"
                     className="inputDefault"
                     precision="2"
                     allowNegative={false}
@@ -46,6 +48,7 @@ class InvestorInputView extends React.Component {
                 />
 
                 <button
+                    data-testid="remove"
                     className="buttonDefault"
                     onClick={this.presenter.onRemoveInvestorClicked.bind(this.presenter)}>{investorStrings.remove}
                 </button>

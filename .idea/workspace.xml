@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -11,7 +14,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29e83cf3-9209-495a-bc0d-d8e7d0e521b5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pkg/constants/constants.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pkg/entity/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pkg/env/constants.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pkg/routes/internal/api/middleware.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pkg/routes/internal/prorate/controller_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pkg/test/assert.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pkg/test/http.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/pkg/test/mocks.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/server/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pkg/routes/internal/prorate/mapper.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/pkg/routes/internal/prorate/mapper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pkg/routes/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/pkg/routes/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pkg/usecase/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/pkg/usecase/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pkg/usecase/prorate.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/pkg/usecase/prorate.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +40,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Go File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -42,7 +62,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
@@ -54,8 +76,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/client/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -65,6 +89,82 @@
       <recent name="$PROJECT_DIR$/client/src/components/investor_input" />
       <recent name="$PROJECT_DIR$/client/src/components/allocation_input" />
     </key>
+  </component>
+  <component name="RunManager" selected="Jest.total allocation input changed">
+    <configuration name="add investor clicked" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/client" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/client/src/components/allocation_input/AllocationInputView.test.js" />
+      <test-names>
+        <test-name value="add investor clicked" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="prorate clicked" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/client" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/client/src/components/allocation_input/AllocationInputView.test.js" />
+      <test-names>
+        <test-name value="prorate clicked" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="render AllocationResultView" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/client" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/client/src/components/allocation_result/AllocationResultView.test.js" />
+      <test-names>
+        <test-name value="render AllocationResultView" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="render InvestorResultView" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/client" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/client/src/components/investor_result/InvestorResultView.test.js" />
+      <test-names>
+        <test-name value="render InvestorResultView" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="total allocation input changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/client/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$/client" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/client/src/components/allocation_input/AllocationInputView.test.js" />
+      <test-names>
+        <test-name value="total allocation input changed" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.total allocation input changed" />
+        <item itemvalue="Jest.prorate clicked" />
+        <item itemvalue="Jest.add investor clicked" />
+        <item itemvalue="Jest.render InvestorResultView" />
+        <item itemvalue="Jest.render AllocationResultView" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,29 +194,120 @@
       <screen x="-266" y="-1057" width="1920" height="1057" />
     </state>
     <state x="433" y="-720" key="#com.intellij.fileTypes.FileTypeChooser/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602505522927" />
-    <state x="203" y="-919" key="SettingsEditor" timestamp="1602419131613">
+    <state x="432" y="-775" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602690402452">
       <screen x="-266" y="-1057" width="1920" height="1057" />
     </state>
+    <state x="432" y="-775" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-266.-1057.1920.1057/0.23.1440.816@-266.-1057.1920.1057" timestamp="1602690402452" />
+    <state width="1878" height="250" key="GridCell.Tab.0.bottom" timestamp="1602710599540">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="223" key="GridCell.Tab.0.bottom/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602605952805" />
+    <state width="1878" height="222" key="GridCell.Tab.0.bottom/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602612507082" />
+    <state width="1878" height="250" key="GridCell.Tab.0.bottom/-266.-1057.1920.1057/0.23.1440.816@-266.-1057.1920.1057" timestamp="1602707475903" />
+    <state width="1878" height="250" key="GridCell.Tab.0.bottom/-266.-1057.1920.1057/0.23.1440.821@-266.-1057.1920.1057" timestamp="1602710599540" />
+    <state width="1765" height="235" key="GridCell.Tab.0.bottom/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602594376232" />
+    <state width="1765" height="264" key="GridCell.Tab.0.bottom/-266.-1057.1920.978/0.23.1440.877@-266.-1057.1920.978" timestamp="1602592742111" />
+    <state width="1878" height="250" key="GridCell.Tab.0.center" timestamp="1602710599540">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="223" key="GridCell.Tab.0.center/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602605952804" />
+    <state width="1878" height="222" key="GridCell.Tab.0.center/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602612507081" />
+    <state width="1878" height="250" key="GridCell.Tab.0.center/-266.-1057.1920.1057/0.23.1440.816@-266.-1057.1920.1057" timestamp="1602707475902" />
+    <state width="1878" height="250" key="GridCell.Tab.0.center/-266.-1057.1920.1057/0.23.1440.821@-266.-1057.1920.1057" timestamp="1602710599540" />
+    <state width="1765" height="235" key="GridCell.Tab.0.center/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602594376231" />
+    <state width="1765" height="264" key="GridCell.Tab.0.center/-266.-1057.1920.978/0.23.1440.877@-266.-1057.1920.978" timestamp="1602592742110" />
+    <state width="1878" height="250" key="GridCell.Tab.0.left" timestamp="1602710599539">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="223" key="GridCell.Tab.0.left/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602605952804" />
+    <state width="1878" height="222" key="GridCell.Tab.0.left/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602612507080" />
+    <state width="1878" height="250" key="GridCell.Tab.0.left/-266.-1057.1920.1057/0.23.1440.816@-266.-1057.1920.1057" timestamp="1602707475901" />
+    <state width="1878" height="250" key="GridCell.Tab.0.left/-266.-1057.1920.1057/0.23.1440.821@-266.-1057.1920.1057" timestamp="1602710599539" />
+    <state width="1765" height="235" key="GridCell.Tab.0.left/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602594376231" />
+    <state width="1765" height="264" key="GridCell.Tab.0.left/-266.-1057.1920.978/0.23.1440.877@-266.-1057.1920.978" timestamp="1602592742110" />
+    <state width="1878" height="250" key="GridCell.Tab.0.right" timestamp="1602710599540">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="223" key="GridCell.Tab.0.right/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602605952805" />
+    <state width="1878" height="222" key="GridCell.Tab.0.right/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602612507081" />
+    <state width="1878" height="250" key="GridCell.Tab.0.right/-266.-1057.1920.1057/0.23.1440.816@-266.-1057.1920.1057" timestamp="1602707475902" />
+    <state width="1878" height="250" key="GridCell.Tab.0.right/-266.-1057.1920.1057/0.23.1440.821@-266.-1057.1920.1057" timestamp="1602710599540" />
+    <state width="1765" height="235" key="GridCell.Tab.0.right/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602594376232" />
+    <state width="1765" height="264" key="GridCell.Tab.0.right/-266.-1057.1920.978/0.23.1440.877@-266.-1057.1920.978" timestamp="1602592742111" />
+    <state width="1878" height="358" key="GridCell.Tab.1.bottom" timestamp="1602612499360">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.1.bottom/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602612499360" />
+    <state width="1878" height="358" key="GridCell.Tab.1.center" timestamp="1602612499359">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.1.center/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602612499359" />
+    <state width="1878" height="358" key="GridCell.Tab.1.left" timestamp="1602612499359">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.1.left/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602612499359" />
+    <state width="1878" height="358" key="GridCell.Tab.1.right" timestamp="1602612499360">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.1.right/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602612499360" />
+    <state x="203" y="-929" key="SettingsEditor" timestamp="1602590002611">
+      <screen x="-266" y="-1057" width="1920" height="978" />
+    </state>
     <state x="203" y="-919" key="SettingsEditor/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602419131613" />
-    <state x="15" y="23" width="1418" height="812" maximized="true" key="dock-window-1" timestamp="1602519042935">
-      <screen x="0" y="23" width="1440" height="812" />
+    <state x="203" y="-929" key="SettingsEditor/-266.-1057.1920.978/0.23.1440.877@-266.-1057.1920.978" timestamp="1602590002611" />
+    <state x="25" y="23" width="1390" height="812" maximized="true" key="dock-window-1" timestamp="1602708521303">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="41" y="23" width="1250" height="808" maximized="true" key="dock-window-1/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602423858631" />
     <state x="15" y="23" width="1418" height="812" maximized="true" key="dock-window-1/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602519042935" />
-    <state x="434" y="-822" width="646" height="490" key="find.popup" timestamp="1602521549470">
-      <screen x="-266" y="-1057" width="1920" height="978" />
+    <state x="25" y="23" width="1390" height="812" maximized="true" key="dock-window-1/-266.-1057.1920.1057/0.23.1440.816@-266.-1057.1920.1057" timestamp="1602708521303" />
+    <state x="10" y="-1026" width="1440" height="812" key="dock-window-1/-266.-1057.1920.978/0.23.1440.877@0.23.1440.877" timestamp="1602589209369" />
+    <state x="0" y="203" width="1440" height="812" maximized="true" key="dock-window-1/0.23.1440.812@0.23.1440.812" timestamp="1602539883263" />
+    <state x="375" y="52" width="815" height="760" key="dock-window-2" timestamp="1602710606825">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
-    <state x="434" y="-803" width="646" height="490" key="find.popup/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602518254407" />
-    <state x="434" y="-803" width="646" height="490" key="find.popup/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602371054827" />
+    <state x="375" y="52" width="815" height="760" key="dock-window-2/-266.-1057.1920.1057/0.23.1440.821@-266.-1057.1920.1057" timestamp="1602710606825" />
+    <state x="434" y="-803" width="646" height="490" key="find.popup" timestamp="1602691859801">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="434" y="-803" width="646" height="490" key="find.popup/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602606207019" />
+    <state x="434" y="-803" width="646" height="490" key="find.popup/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602690592279" />
+    <state x="434" y="-803" width="646" height="490" key="find.popup/-266.-1057.1920.1057/0.23.1440.816@-266.-1057.1920.1057" timestamp="1602690465101" />
+    <state x="434" y="-803" width="646" height="490" key="find.popup/-266.-1057.1920.1057/0.23.1440.821@-266.-1057.1920.1057" timestamp="1602691859801" />
+    <state x="434" y="-822" width="646" height="490" key="find.popup/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602523678443" />
     <state x="434" y="-822" width="646" height="490" key="find.popup/-266.-1057.1920.978/0.23.1440.877@-266.-1057.1920.978" timestamp="1602521549470" />
-    <state x="392" y="-853" width="670" height="626" key="search.everywhere.popup" timestamp="1602522247679">
-      <screen x="-266" y="-1057" width="1920" height="978" />
+    <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup" timestamp="1602709476758">
+      <screen x="-266" y="-1057" width="1920" height="1057" />
     </state>
     <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.808@-266.-1057.1920.1057" timestamp="1602425425044" />
     <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.811@-266.-1057.1920.1057" timestamp="1602425748118" />
-    <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602519295619" />
-    <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602371059003" />
-    <state x="392" y="-854" width="670" height="625" key="search.everywhere.popup/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602508553245" />
-    <state x="392" y="-853" width="670" height="626" key="search.everywhere.popup/-266.-1057.1920.978/0.23.1440.877@-266.-1057.1920.978" timestamp="1602522247679" />
+    <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.812@-266.-1057.1920.1057" timestamp="1602607030712" />
+    <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.814@-266.-1057.1920.1057" timestamp="1602690595645" />
+    <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.816@-266.-1057.1920.1057" timestamp="1602708308498" />
+    <state x="392" y="-837" width="670" height="676" key="search.everywhere.popup/-266.-1057.1920.1057/0.23.1440.821@-266.-1057.1920.1057" timestamp="1602709476758" />
+    <state x="392" y="-854" width="670" height="625" key="search.everywhere.popup/-266.-1057.1920.977/0.23.1440.877@-266.-1057.1920.977" timestamp="1602593625082" />
+    <state x="392" y="-853" width="670" height="626" key="search.everywhere.popup/-266.-1057.1920.978/0.23.1440.877@-266.-1057.1920.978" timestamp="1602592914036" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/server/pkg/routes/internal/prorate/controller.go</url>
+          <line>36</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/server/pkg/routes/internal/prorate/controller.go</url>
+          <line>34</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/components/investor_input/InvestorInputView.js</url>
+          <line>32</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

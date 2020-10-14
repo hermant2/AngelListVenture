@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
 import './styles/Helper.css'
 import Header from './components/Header'
 import ProrationContainerView from './components/proration_container/ProrationContainerView'

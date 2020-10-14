@@ -1,6 +1,8 @@
 package prorate
 
 import (
+	"github.com/hermant2/angelventureserver/pkg/constants"
+	"github.com/hermant2/angelventureserver/pkg/entity"
 	"github.com/hermant2/angelventureserver/pkg/usecase"
 )
 
@@ -18,13 +20,13 @@ func mapProrateInput(request prorateRequest) usecase.ProrateInput {
 	return input
 }
 
-func mapProrateResponseWrapper(investorOutputs []*usecase.InvestorOutput) prorateResponseWrapper {
+func mapProrateResponseWrapper(investorAllocations []*entity.InvestorAllocation) prorateResponseWrapper {
 	response := prorateResponse{}
-	for _, output := range investorOutputs {
+	for _, allocation := range investorAllocations {
 		allocationResponse := investorAllocationResponse{
-			ID:               output.UUID,
-			Name:             output.Name,
-			AllocationAmount: output.AppliedAllocation.Round(5)}
+			ID:               allocation.UUID,
+			Name:             allocation.Name,
+			AllocationAmount: allocation.AppliedAllocation.Round(constants.DecimalPrecision)}
 		response.InvestorAllocations = append(response.InvestorAllocations, allocationResponse)
 	}
 

@@ -38,6 +38,7 @@ class AllocationInputView extends React.Component {
             <div className="centeredContainer">
                 <h3 className="defaultTitle">{prorateStrings.totalAvailableAllocation}</h3>
                 <CurrencyInput
+                    data-testid="totalAllocation"
                     className="inputDefault"
                     precision="2"
                     allowNegative={false}
@@ -49,10 +50,12 @@ class AllocationInputView extends React.Component {
                 />
                 {investorInputs}
                 <button
+                    data-testid="addInvestor"
                     className="buttonDefault spacingTop"
                     onClick={this.presenter.onAddInvestorClicked.bind(this.presenter)}>{prorateStrings.addInvestor}
                 </button>
                 <button
+                    data-testid="prorate"
                     className="buttonDefault spacingTop"
                     onClick={this.presenter.onProrateClicked.bind(this.presenter)}>{prorateStrings.prorate}
                 </button>
